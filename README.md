@@ -1,69 +1,85 @@
+**English** · [Português (Brasil)](README.pt-BR.md)
+
 # Privacy-Policy-Disclaimer-Without-WordPress-Plugin
 
-Aviso de cookies (banner "ao usar este site, você aceita...") em
-HTML/JavaScript puro, para colar no rodapé do tema — sem instalar
-plugin de consentimento de cookies.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## O que é
+A cookie notice banner ("by using this site, you accept...") in plain
+HTML and JavaScript, to paste into your theme footer instead of
+installing a cookie consent plugin. It has no dependencies. The banner
+text and the default privacy policy path are in Brazilian Portuguese.
 
-Um banner fixo que aparece na primeira visita, com um link para a
-página de política de privacidade e um botão "OK". Ao clicar em OK, o
-banner some (sem recarregar a página) e grava um cookie por 30 anos
-(10950 dias) para não aparecer de novo no mesmo navegador.
+## Contents
 
-O código foi revisado nesta versão: o botão "OK" agora é um `<button>`
-de verdade (antes era uma `<div>` com `onclick`, que não recebe foco
-por teclado nem é lido corretamente por leitor de tela), e duas
-funções mortas que nunca eram chamadas (uma que reexibia o banner sem
-necessidade e outra que atualizava um relógio que não existe neste
-snippet) foram removidas.
+- [Features](#features)
+- [Usage](#usage)
+- [FAQ](#faq)
+- [Limitations](#limitations)
+- [Contributing](#contributing)
+- [Author](#author)
+- [License](#license)
 
-## Como usar
+## Features
 
-1. Copie o conteúdo de `Code.txt`.
-2. Cole no `footer.php` do seu tema (ou em um bloco de HTML
-   personalizado, se o seu tema/site builder permitir).
-3. Confirme que a URL da política de privacidade está correta — o
-   código usa `bloginfo('url')` mais `/politica-de-privacidade/`; se a
-   sua página de política tiver outra URL, ajuste a linha 2 do
-   arquivo.
-4. Publique e visite o site em uma aba anônima para conferir se o
-   banner aparece e some corretamente ao clicar em OK.
+A fixed banner shows up on the first visit, with a link to the privacy
+policy page and an "OK" button. Clicking OK hides the banner (without
+reloading the page) and sets a cookie for 30 years (10950 days), so it
+does not show up again in the same browser.
 
-## Perguntas frequentes
+The code was revised in this version. The "OK" button is now a real
+`<button>` (it used to be a `<div>` with `onclick`, which cannot get
+keyboard focus and is not announced correctly by screen readers). Two
+dead functions that were never called (one re-showed the banner for no
+reason, the other updated a clock that does not exist in this snippet)
+were removed.
 
-**Isso deixa o site em conformidade com a LGPD?**
-Não sozinho. Esse é um aviso simples de cookies, não uma ferramenta
-completa de gestão de consentimento (que exigiria, por exemplo,
-bloquear scripts de terceiros até o usuário aceitar, granularidade por
-categoria de cookie e registro do consentimento). Para conformidade
-completa com a LGPD, avalie uma ferramenta dedicada de consentimento
-ou orientação jurídica específica.
+## Usage
 
-**Funciona fora do WordPress?**
-A única parte específica do WordPress é `<?php bloginfo('url'); ?>` na
-linha 2, que gera a URL do site. Fora do WordPress, basta trocar essa
-linha pela URL fixa do seu site.
+1. Copy the contents of `Code.txt`.
+2. Paste it into your theme's `footer.php` (or into a custom HTML
+   block, if your theme or site builder allows it).
+3. Check the privacy policy URL. The code uses `bloginfo('url')` plus
+   `/politica-de-privacidade/`. If your policy page has a different
+   URL, change the `privacy_policy` variable on line 3 of the file.
+4. Publish and open the site in a private window to check that the
+   banner shows up and goes away when you click OK.
 
-**Precisa de plugin ou biblioteca externa?**
-Não. É HTML e JavaScript puro, sem dependência.
+## FAQ
 
-**O banner recarrega a página ao aceitar?**
-Não. Clicar em OK só grava o cookie e esconde o banner — a página
-continua exatamente como estava.
+**Does this make the site LGPD compliant?**
+Not on its own. This is a simple cookie notice, not a full consent
+management tool (that would require, for example, blocking third-party
+scripts until the user accepts, per-category consent and a record of
+the consent). For full LGPD compliance, look at a dedicated consent
+tool or get specific legal advice.
 
-## Limitações
+**Does it work outside WordPress?**
+The only WordPress-specific part is `<?php bloginfo('url'); ?>` on
+line 3, which outputs the site URL. Outside WordPress, replace it with
+your site's fixed URL.
 
-Aviso de cookies simples (notice banner), não uma ferramenta de
-consentimento granular. Não bloqueia scripts de terceiros antes do
-aceite, não registra data/hora do consentimento e não distingue
-categorias de cookie (necessário, analytics, marketing).
+**Does it need a plugin or an external library?**
+No. It is plain HTML and JavaScript, with no dependencies.
 
-## Autor
+**Does the banner reload the page when accepted?**
+No. Clicking OK only sets the cookie and hides the banner. The page
+stays exactly as it was.
 
-[Lucas Ferraz](https://lucasferraz.com) — especialista em SEO, criação de
-sites e SEO para IA, fundador da [Lucas Ferraz SEO](https://lucasferrazseo.com).
+## Limitations
 
-## Licença
+A simple cookie notice banner, not a granular consent tool. It does not
+block third-party scripts before acceptance, does not record the date
+and time of consent and does not tell cookie categories apart
+(necessary, analytics, marketing).
 
-MIT — ver [LICENSE](LICENSE).
+## Contributing
+
+Bug reports and suggestions are welcome through [GitHub Issues](https://github.com/LucasFerrazSEO/Privacy-Policy-Disclaimer-Without-WordPress-Plugin/issues).
+
+## Author
+
+[Lucas Ferraz](https://lucasferraz.com) is an SEO, website development and Generative Engine Optimization specialist and the founder of [Lucas Ferraz SEO](https://lucasferrazseo.com).
+
+## License
+
+MIT. See [LICENSE](LICENSE).
