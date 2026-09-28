@@ -1,6 +1,6 @@
 **English** · [Português (Brasil)](README.pt-BR.md)
 
-# Privacy-Policy-Disclaimer-Without-WordPress-Plugin
+# privacy-policy-disclaimer-without-wordpress-plugin
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![PHP 7.4+](https://img.shields.io/badge/PHP-7.4%2B-777bb4.svg)
@@ -215,7 +215,7 @@ file. The old code is in the Git history.
 
 ## Contributing
 
-Bug reports and suggestions are welcome through [GitHub Issues](https://github.com/LucasFerrazSEO/Privacy-Policy-Disclaimer-Without-WordPress-Plugin/issues).
+Bug reports and suggestions are welcome through [GitHub Issues](https://github.com/LucasFerrazSEO/privacy-policy-disclaimer-without-wordpress-plugin/issues).
 
 ## Author
 

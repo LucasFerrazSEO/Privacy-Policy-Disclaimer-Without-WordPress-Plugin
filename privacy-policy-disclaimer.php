@@ -18,7 +18,7 @@
  * @version   2.0.0
  * @author    Lucas Ferraz <https://lucasferraz.com>
  * @license   MIT
- * @link      https://github.com/LucasFerrazSEO/Privacy-Policy-Disclaimer-Without-WordPress-Plugin
+ * @link      https://github.com/LucasFerrazSEO/privacy-policy-disclaimer-without-wordpress-plugin
  *
  * Requires WordPress 5.9+ and PHP 7.4+.
  *
